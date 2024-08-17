@@ -1,0 +1,4 @@
+public/
+firebase.json
+*.vscode/
+.DS_Store
