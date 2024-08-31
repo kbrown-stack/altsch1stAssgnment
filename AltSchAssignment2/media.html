@@ -4,60 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me via media</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="nav">
-      <!-- <a href="table.html">Table</a>
-      <a href="media.html">Media</a> -->
-
-      <li><a href="home.html">About Me</a></li>
-      <li><a href="application.html">AltSch Application Form</a></li>
-      <li><a href="table.html">Table</a></li>
-      <li><a href="media.html">Media</a></li>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="application.html">AltSch Application Form</a></li>
+          <li><a href="table.html">Table</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="container">
       <div class="about">
         <h1>About me</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          perferendis adipisci dolore quaerat et facere.
+          An Information Technology professional with expertise in Application
+          Support Engineer with a proven track record of effectively diagnosing
+          and resolving complex technical issues. Am motivated as a skilled
+          professional in Application support dedicated to delivering
+          exceptional customer service and ensuring the optimal performance of
+          critical software applications. Seeking to leverage my expertise to
+          contribute in the computing world to help bring solutions on problems
         </p>
       </div>
 
       <div class="media-element">
-        <h2>Responsive Photo</h2>
+        <h2>My Favourite Wallpaper</h2>
         <picture>
-          <source media="(min-width: 1200px)" srcset="images/large.jpg" />
-          <source media="(min-width: 768px)" srcset="images/medium.jpg" />
-          <source media="(min-width: 480px)" srcset="images/small.jpg" />
+          <source media="(min-width: 934px)" srcset="asset/large.jpg" />
+          <source media="(min-width: 450px)" srcset="asset/medium.jpg" />
+          <source media="(min-width: 320px)" srcset="asset/small.jpg" />
           <img
-            src="asset/BrownProfilePic.jpeg"
-            alt="My Photo"
-            class="Responsive-picture"
+            src="asset/large.jpg"
+            alt="My Favourite Wallpaper"
+            class="responsive-picture"
           />
         </picture>
       </div>
 
+      <!-- /* Music and vidoe element not responding */ -->
+
       <div class="media-element">
-        <h2>Video Control</h2>
+        <h2>Music Video</h2>
         <video controls>
           <source src="videos/intro.mp4" type="vidoe/mp4" />
           <source src="videos/intro.ogg" type="vidoe/ogg" />
-          Browser does not support video.
+          <video src="asset/HTML 5 Video.mp4" controls></video>
         </video>
       </div>
 
       <div class="media-element">
         <h2>My Music</h2>
         <audio controls>
-          <source src="audio/song.mp3" type="audio/mpeg" />
-          <source src="audio/song.ogg" type="audio/ogg" />
-          <!-- <audio src="/asset/Hal.mp3" controls></audio> -->
-          Browser does not support the audio.
+          <source src="asset/Hal.mp3" type="audio/mp3" />
+          <source src="asset/Hal.ogg" type="audio/ogg" />
+          <audio src="asset/Hal.mp3" controls></audio>
         </audio>
       </div>
     </div>
+    <footer>
+      <p>Tel: 0800ALTSCHOOL</p>
+      <p>&copy; 2024 AltSchool Africa. All rights reserved.</p>
+    </footer>
   </body>
 </html>
